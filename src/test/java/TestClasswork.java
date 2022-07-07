@@ -43,6 +43,17 @@ public class TestClasswork {
         }
     }
 
+    @Test
+    public void testCountOfEvenNumberBetween1And10() {
+        int actualEvenNumberCount = 0;
+        int expectedEvenNumberCount = 4;
 
+        for (int i = 1; i <= 10; i++) {
+            if (i % 2 == 0) {
+                actualEvenNumberCount++;
+            }
+        }
+        Assert.assertEquals(actualEvenNumberCount, expectedEvenNumberCount);
+    }
 
 }
