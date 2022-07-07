@@ -16,13 +16,13 @@ public class TestDemo {
     @Test
     public void testSomethingAgain() {
         String actualText = "Siandien yra pirmadienis";
-//        String expectedText = "antradienis";
-        String expectedText = "pirmadienis";
+        String expectedText = "antradienis";
+//        String expectedText = "pirmadienis";
 
         Assert.assertTrue(
-                actualText.contains(expectedText)
+                actualText.contains(expectedText),
 //                actualText.compareTo(expectedText) == 0,
-//                String.format("expected: %s, actual: %s ", expectedText, actualText)
+                String.format("Expected: %s, actual: %s ", expectedText, actualText)
         );
     }
 }
