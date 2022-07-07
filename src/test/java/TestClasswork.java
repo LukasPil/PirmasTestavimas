@@ -29,7 +29,18 @@ public class TestClasswork {
         DayOfWeek actualDay = LocalDate.now().getDayOfWeek();
 
         Assert.assertTrue(actualDay == expectedDay,
-        String.format("Expected: %s, Actual: %s", expectedDay, actualDay));
+                String.format("Expected: %s, Actual: %s", expectedDay, actualDay));
+    }
+
+    @Test
+    public void testWaitFor5Seconds() {
+
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+            Thread.currentThread().interrupt();
+        }
     }
 
 
