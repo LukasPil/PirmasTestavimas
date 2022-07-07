@@ -12,6 +12,7 @@ public class TestDemo {
 
         Assert.assertEquals(actualSum, expectedSum);
     }
+
     @Test
     public void testSomethingAgain() {
         String actualText = "Siandien yra pirmadienis";
@@ -23,4 +24,19 @@ public class TestDemo {
                 String.format("Expected: %s, actual: %s ", expectedText, actualText)
         );
     }
+
+    @Test
+    public void testIfNumber4IsEven() {
+        //Duomenys
+        int input = 4;
+        int actualReminder;
+        int expectedReminder = 0;
+
+        // Testavimo veiksmas
+        actualReminder = input % 2;
+
+        // Palyginimas
+        Assert.assertEquals(actualReminder, expectedReminder);
+    }
+
 }
