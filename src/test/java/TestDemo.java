@@ -12,16 +12,14 @@ public class TestDemo {
 
         Assert.assertEquals(actualSum, expectedSum);
     }
-
     @Test
     public void testSomethingAgain() {
         String actualText = "Siandien yra pirmadienis";
-        String expectedText = "antradienis";
-//        String expectedText = "pirmadienis";
+//        String expectedText = "antradienis";
+        String expectedText = "pirmadienis";
 
         Assert.assertTrue(
                 actualText.contains(expectedText),
-//                actualText.compareTo(expectedText) == 0,
                 String.format("Expected: %s, actual: %s ", expectedText, actualText)
         );
     }
